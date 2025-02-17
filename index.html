@@ -72,6 +72,32 @@
       background-color: #000;
     }
 
+    .day {
+      background-color: #fff;
+      color: #000; /* 设置字体颜色为黑色以便在白色背景上显示 */
+    }
+
+    .day a {
+      color: #000; /* 链接文字颜色 */
+    }
+
+    .day .text-primary {
+      color: #000; /* 主文本颜色 */
+    }
+
+    .day .text-secondary {
+      color: #000; /* 辅助文本颜色 */
+      text-opacity: 1;
+    }
+
+    .day .hover\:text-primary:hover {
+      color: #000; /* 悬停状态下主文本颜色 */
+      text-opacity: 1;
+    }
+
+    .day .bg-white {
+      background-color: #fff; /* 设置背景为白色 */
+    }
     .highlight {
       background-color: yellow;
       border: 1px dashed red;
@@ -100,8 +126,8 @@
   </style>
 </head>
 
-<body class="bg-white dark:bg-black dark" style="overscroll-behavior: none">
-  <div class="flex w-full flex-col bg-white dark:bg-black">
+<body class="bg-white day" style="overscroll-behavior: none">
+  <div class="flex w-full flex-col bg-white">
     <div class="mx-auto w-full max-w-4xl px-4 py-12 pb-10 md:px-8">
       <div class="w-full flex flex-col justify-center items-center space-y-5 pb-10 rounded-lg">
         <div class="w-full flex flex-col justify-center items-center space-y-5">
